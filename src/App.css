@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.188);
+}
+
+.flex-item {
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #333;
+  text-align: center;
+  background-color: gray;
+}
+
+.flex-item:hover {
+  background-color: darkgray;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+
+}
