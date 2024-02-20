@@ -1,6 +1,6 @@
 :root {
   --header-height: 39px;
-  --footer-height: 39px;
+  --footer-height: 0px;
 }
 
 .App {
@@ -51,10 +51,12 @@ html {
 }
 
 body {
-  overflow: hidden;
-  width: 100%;
-  height: 100vh;
+
 }
+/* 
+.sticky + .content {
+  padding-top: 102px;
+} */
 
 .flex-container {
   display: flex;
@@ -78,10 +80,17 @@ a:hover {
 }
 
 .header {
+  z-index: 1000;
   height: var(--header-height);
   top: 0;
   width: 100%;
+  /* position: absolute; */
 }
+
+/* 
+.sticky {
+  position: fixed;
+} */
 
 .header-item {
   color: white;
@@ -101,6 +110,11 @@ a:hover {
 
 .home {
   background-image: url('../image.png');
+  overflow: hidden;
+  overscroll-behavior-y: contain;
+  
+  width: 100%;
+  height: 100vh;
 }
 
 .page {
@@ -110,6 +124,7 @@ a:hover {
 
   height: calc(100vh - var(--footer-height) - var(--header-height));
   text-align: center;
+  overscroll-behavior: none;
 
 
   /* flex: 1;
@@ -120,6 +135,7 @@ a:hover {
 
 h1 {
   margin: 0px;
+  color: black;
 }
 
 .home-container {
@@ -132,12 +148,12 @@ h1 {
 
 .home-midground {
   position: absolute;
-  top: 90px;
+  top: 50px;
   left: 50%;
-  width: 70%;
+  width: calc(100vw - 2*50px);
   height: 30%;
-  /* min-height: calc(50% - 200px); */
-  transform: translate(-50%, -50%);
+  min-height: 100px;
+  transform: translate(-50%, 0);
   background-color: rgba(13, 6, 6, 0.391);
 }
 
@@ -146,12 +162,31 @@ h1 {
   position: relative;
   top: 50%;
   left: 50%;
-  width: 20px;
-  height: 20px;
-  font-size: 10px;
+  width: calc(100% - 2*25px);
+  height: 13vw;
+  font-size: 10vw;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  overflow: hidden;
+  /* overflow: hidden; */
   transform: translate(-50%, -50%);
+  background-color: rgba(13, 6, 6, 0.391);
+}
+
+.page-container {
+  overscroll-behavior: auto;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100%;
+  position: relative;
+  flex-direction: column;
+}
+
+.page-section {
+  top: 50px;
+  padding: 5px;
+  margin: 5px;
+  /* border: 1px solid black; */
   background-color: rgba(13, 6, 6, 0.391);
 }

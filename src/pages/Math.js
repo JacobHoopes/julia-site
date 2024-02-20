@@ -3,12 +3,13 @@ import "../App.css";
 
 function Math() {
     return (
-        <div className="math page">
-            <div>
-                <h1> Math Page! </h1>
-                <p> Subtitles on math page </p>
+        <body className="math page">
+            <div className="page-container">
+                <div className="page-section">
+                    <h1> Math </h1>
+                </div>
             </div>
-        </div>
+        </body>
     );
 }
 

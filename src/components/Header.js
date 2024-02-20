@@ -8,17 +8,16 @@ function Header() {
             <Link to="/julia-site/" className="header-item flex-item">
                 Home
             </Link>
-            <Link to="/julia-site/math" className="header-item flex-item">
-                Math
+            <Link to="/julia-site/media" className="header-item flex-item">
+                Media
             </Link>
             <Link to="/julia-site/me" className="header-item flex-item">
                 Me
             </Link>
-            <Link to="/julia-site/media" className="header-item flex-item">
-                Media
+            <Link to="/julia-site/math" className="header-item flex-item">
+                Math
             </Link>
         </div>
-        
     );
 }
 

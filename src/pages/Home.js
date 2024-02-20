@@ -8,12 +8,9 @@ function Home() {
                 <div className="home-midground">
                     
                     <div className="home-foreground">
-                        Heyo
+                        Julia Carrigan
                     </div>
                 </div>
-                
-                {/* <h1> Home Page </h1>
-                <p> Some home page content </p> */}
             </div>
         </body>
     );
