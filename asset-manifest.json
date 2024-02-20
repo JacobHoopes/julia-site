@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/julia-site/static/css/main.5b9f43ea.css",
-    "main.js": "/julia-site/static/js/main.df143d28.js",
+    "main.css": "/julia-site/static/css/main.71b48ffb.css",
+    "main.js": "/julia-site/static/js/main.13bc60ae.js",
     "static/js/592.c6f57b8e.chunk.js": "/julia-site/static/js/592.c6f57b8e.chunk.js",
+    "static/media/image.png": "/julia-site/static/media/image.42e716b3bc8aaa732b3a.png",
     "index.html": "/julia-site/index.html",
-    "main.5b9f43ea.css.map": "/julia-site/static/css/main.5b9f43ea.css.map",
-    "main.df143d28.js.map": "/julia-site/static/js/main.df143d28.js.map",
+    "main.71b48ffb.css.map": "/julia-site/static/css/main.71b48ffb.css.map",
+    "main.13bc60ae.js.map": "/julia-site/static/js/main.13bc60ae.js.map",
     "592.c6f57b8e.chunk.js.map": "/julia-site/static/js/592.c6f57b8e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b9f43ea.css",
-    "static/js/main.df143d28.js"
+    "static/css/main.71b48ffb.css",
+    "static/js/main.13bc60ae.js"
   ]
 }
