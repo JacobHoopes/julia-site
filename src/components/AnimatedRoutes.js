@@ -12,9 +12,9 @@ function AnimatedRoutes() {
     return (
         <AnimatePresence mode="wait">
             <Routes location={location} key={location.pathname}>
-                <Route path="/" 
+                <Route path="/julia-site/" 
                 element={
-                    <motion.div
+                    <motion.div className="page"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
@@ -23,7 +23,7 @@ function AnimatedRoutes() {
                     </motion.div>
                 } />
 
-                <Route path="/math" 
+                <Route path="/julia-site/math" 
                 element={
                     <motion.div
                         initial={{ opacity: 0 }}
@@ -34,7 +34,7 @@ function AnimatedRoutes() {
                     </motion.div>
                 } />
 
-                <Route path="/me" 
+                <Route path="/julia-site/me" 
                 element={
                     <motion.div
                         initial={{ opacity: 0 }}
@@ -45,7 +45,7 @@ function AnimatedRoutes() {
                     </motion.div>
                 } />
 
-                <Route path="/media" 
+                <Route path="/julia-site/media" 
                 element={
                     <motion.div
                         initial={{ opacity: 0 }}
